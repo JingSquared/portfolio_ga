@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+  /* Using * applies to everything */
+}
+body {
+  margin: 0;
+  font-family: 'Roboto',sans-serif;
+  /*putting sans-serif is a fall back, so that if for some reason, the users
+  computer doesn't know what arial is, then it will fall to sans-serif*/
+  /* adding in Roboto, I can link it from google fonts, copy the link tag and put
+  it in the html, same place we put css link.*/
+  font-size: 1.25em;
+  /* using px for font is a hard over ride, in order to respect the user settings
+  of users, we use 'em'. em is a multiplicative unit of the base font size. 1.25xem. */
+}
+header {
+  min-height: 100vh;
+  /* don't use %, because that is taking a % of the parent. vh takes the entire
+  view height of the users device. 100vh is the entire height of the device.*/
+  background-color: #f2dce8;
+  /*background: linear-gradient(to bottom right, red, blue)*/
+}
+nav {
+  background-color:#cea9bd;
+  position: fixed;
+  width: 100%;
+   /* position:fixed; fixes the navigation as you scroll down*/
+}
+nav a {/*chaning anchor tags within nav --> nav a*/
+  color: white;
+  text-decoration: none;
+}
+/*nav a:visited {
+  color: black;
+}*/
+nav li {
+  display: inline-block;
+  /*inline-block next to each other like inline, but you can give heights and width
+  inline is all in one line*/
+  padding: 1em;
+  /* em is a multiplier of the font size, everything adjusts for changes*/
+}
+nav ul {
+  margin:0;
+}
+header main {
+  padding-top: 3em;
+  text-align: center;
+  font-size: 1.25em;
+}
+h1 {
+  text-transform: uppercase;
+  font-size: 2.5em;
+  letter-spacing: .3em;
+  color: #9560c4;
+  text-shadow: 2px 2px purple;
+  /* first two number is x and y, add 3rd number for blur*/
+}
+header img {
+  padding: 1em;
+}
+
+.about-me {
+  /*to target a class put a . */
+  padding: 3em 0;
+  line-height: 2;
+  background-color: gray;
+  color: white;
+}
+
+.content {
+  width: 50%;
+  margin: 0 auto;
+  /*margin of 0 for top and bottom, margin of left and right is auto*/
+}
+
+.Projects {
+  padding: 3em 0;
+  background-color: #eae3e9;
+}
+
+.Projects img {
+  width: 30%;
+  padding: 25px 25px 25px 0;
+}
